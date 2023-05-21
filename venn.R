@@ -31,7 +31,7 @@ daframe <- data.frame(gse=as.integer(table(GSE$change)),
                       row.names = c('DOWN','NOT','UP'))
 
 
-
+up(GSE)
 
 # 韦恩图
 # 上调三维维恩图

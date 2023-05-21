@@ -47,7 +47,7 @@ roc_data_885 <- roc(labels, mirna_expression_885)
 roc_data_184 <- roc(labels, mirna_expression_184)
 roc_data_339 <- roc(labels, mirna_expression_339)
 roc_data_142 <- roc(labels, mirna_expression_142)
-pdf('roc_miR.pdf')
+svg('roc_miR.svg')
 plot(roc_data_21,legacy.axes = TRUE,
      col="red",identity.col="skyblue2",main = paste0("ROC curve for TCGA-BRCA"))
 plot(roc_data_183,add=T,legacy.axes = TRUE,

@@ -46,5 +46,6 @@ g + geom_point(size = 1) +
                   size=3,col = 'black',box.padding = unit(2, 'lines'),segment.color = 'black', show.legend = FALSE)
 
 
-ggsave('volcano_plot_GSE59247.eps',height = 20,width = 30,units = 'cm')
+ggsave('volcano_plot_GSE59247.svg',height = 20,width = 30,units = 'cm')
 ?ggsave
+install.packages("svglite")

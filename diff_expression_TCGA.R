@@ -77,6 +77,7 @@ rownames(rt) <- rt[,2]
 rt <- rt[,-1]
 rt <- rt[,-1]
 dim(rt)
+rt=rt[colMeans(rt)>0,]
 write.table(rt, file="rt.xls", sep="\t", quote=F, col.names=T)
 
 # 用substr函数在TCGA数据中提取样本信息
